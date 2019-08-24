@@ -14,33 +14,78 @@ body  {
 }
 
 #section1 {
-  background-image: url("https://i.imgur.com/WWwUzOG.png");
-  background-size: 60%;
+  background-image: url("https://i.imgur.com/lygSWFn.png");
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: top;
   /* padding: 6em 0; */
 }
 
 #section2 {
-    background-image: url("https://i.imgur.com/3llQ30Q.png");
-    background-size: 60%;
+    background-image: url("https://i.imgur.com/Flm1lLq.png");
+    background-size: 70%;
     background-position:top;
     background-repeat: no-repeat;
 
 }
 
 #section3 {
-  background-image: url("https://i.imgur.com/WWwUzOG.png");
+  background-image: url("https://i.imgur.com/6FrFMRg.png");
   background-size: 60%;
-  background-position:top;
   background-repeat: no-repeat;
+  background-position: top;
+  padding: 7em 0;
 
 }
 
 #section4 {
   background-image: url("https://unsplash.it/1024/768?image=1022");
+
 }
 
 #section5 {
   background-image: url("https://unsplash.it/1024/768?image=815");
 }
+
+
+/* section 3  designe*/
+
+.items {
+  width: 100%;
+  white-space: nowrap;
+  adding: 100px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  /* user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: rgba(255,255,255,0.1);
+  font-size: 0;
+  perspective: 500px; */ */
+}
+
+.item {
+    width: 500px;
+    height: calc(100% - 40px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 80px;
+    font-weight: 100;
+    height: 450px;
+    /* border: 1px solid red;
+    border-radius: 5%; */
+
+}
+
+.item:nth-child(1) { border: 1px solid dodgerblue; border-radius: 5%;}
+.item:nth-child(2) { border: 1px solid lightcoral; border-radius: 5%;}
+.item:nth-child(3) { border: 1px solid rebeccapurple; border-radius: 5%;}
+.item:nth-child(4) { border: 1px solid cadetblue; border-radius: 5%;}
