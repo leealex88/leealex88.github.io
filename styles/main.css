@@ -1,91 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet');
+
 body  {
   margin: 0;
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica', sans-serif;
-  font-size: 60px;
-  text-align: center;
-  font-weight: 700;
 }
 
 .document {
   padding: 7em 0;
   background: 50% 50% / cover no-repeat;
   background-attachment: fixed;
+  height: 80vh;
 }
 
 #section1 {
-  background-image: url("https://i.imgur.com/lygSWFn.png");
+  background-image: url("https://i.imgur.com/PkQ9GXT.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: top;
   /* padding: 6em 0; */
+  height: 80vh;
 }
 
 #section2 {
-    background-image: url("https://i.imgur.com/Flm1lLq.png");
+    background-image: url("https://i.imgur.com/SK41wON.png");
     background-size: 70%;
     background-position:top;
     background-repeat: no-repeat;
+    height: 80vh;
 
 }
 
 #section3 {
-  background-image: url("https://i.imgur.com/6FrFMRg.png");
+  background-image: url("https://i.imgur.com/HoepogT.png");
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: top;
   padding: 7em 0;
+  height: 80vh;
 
 }
 
 #section4 {
-  background-image: url("https://unsplash.it/1024/768?image=1022");
-
+  /* background-image: url("https://i.imgur.com/lDBemQg.png"); */
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 7em 0;
+  height: 70vh;
 }
 
-#section5 {
-  background-image: url("https://unsplash.it/1024/768?image=815");
-}
 
+/* section 3 pictures */
 
-/* section 3  designe*/
-
-.items {
-  width: 100%;
-  white-space: nowrap;
-  adding: 100px;
+.section3container {
+  min-height: 650px;
+  /* background: pink; */
+  /* margin: 70px auto 0; */
+  display: flex;
+  flex-direction: row;
   overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+}
 
-  /* user-select: none;
-  cursor: pointer;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
+.section3container .box {
   position: relative;
-  background: rgba(255,255,255,0.1);
-  font-size: 0;
-  perspective: 500px; */ */
+  min-width: 360px;
+  height: 300px;
+  border: solid 2px #ff66c4;
+  border-radius: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
-.item {
-    width: 500px;
-    height: calc(100% - 40px);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 35px;
-    margin-right: 35px;
-    font-size: 80px;
-    font-weight: 100;
-    height: 450px;
-    /* border: 1px solid red;
-    border-radius: 5%; */
+.section3container .box .imgBox {
+  position: relative;
+  overflow: hidden;
 
 }
 
-.item:nth-child(1) { border: 1px solid dodgerblue; border-radius: 5%;}
-.item:nth-child(2) { border: 1px solid lightcoral; border-radius: 5%;}
-.item:nth-child(3) { border: 1px solid rebeccapurple; border-radius: 5%;}
-.item:nth-child(4) { border: 1px solid cadetblue; border-radius: 5%;}
+.section3container .box .imgBox img {
+  max-width: 100%;
+  transition: transform 2s;
+  margin-top: 45px;
+}
+
+.section3container .box:hover .imgBox img {
+
+  transform: scale(1.2);
+}
+
+.section3container .box .description {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(111, 214, 255, .9);
+  transform: scaleY(0);
+  transition: transform .5s;
+}
+
+.section3container .box:hover .description {
+  transform: scaleY(1);
+}
+.section3container .box .description .projects {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.section3container .box .description .projects h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #f6881e;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.section3container .box .description .projects h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #f6881e;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+.section3container .box .description .projects p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+
+.gitHub {
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#section4 p {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 24px;
+
+}
+
+#section4 img {
+  width: 10%;
+  height: 10%;
+  margin-left: 100px;
+  padding: 10px;
+}
+
+
+#section4 a {
+  text-decoration: underline;
+  color: #cb6ce6;
+}
