@@ -119,17 +119,29 @@ body  {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.section3container .box .description .projects h6 {
+.section3container .box .description .projects h3 {
   margin: 0;
   padding: 0;
   font-size: 20px;
   color: #f6881e;
+  font-size: 16px;
   font-family: 'Alegreya Sans SC', sans-serif;
+  text-decoration: underline;
+}
+.section3container .box .description .projects h3 a {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #f6881e;
+  font-size: 16px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-decoration: underline;
 }
 .section3container .box .description .projects p {
   margin: 10px 0 0;
   padding: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
+  line-height: 1.6;
 
 }
 
