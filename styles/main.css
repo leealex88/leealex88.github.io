@@ -30,20 +30,20 @@ body  {
 }
 
 #section3 {
-  background-image: url("https://i.imgur.com/Iz0VHOY.png");
+  background-image: url("https://i.imgur.com/2i5lNdZ.png");
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position: top;
-  padding: 7em 0;
+  background-position: bottom;
+  padding: 12em 0;
   height: 80vh;
 
 }
 
 #section4 {
-  /* background-image: url("https://i.imgur.com/lDBemQg.png"); */
+  background-image: url("https://i.imgur.com/lIXu5jA.png");
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   padding: 7em 0;
   height: 70vh;
 }
@@ -158,8 +158,8 @@ body  {
 }
 
 #section4 img {
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
   margin-left: 100px;
   padding: 10px;
 }
