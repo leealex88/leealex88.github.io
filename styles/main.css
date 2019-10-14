@@ -4,66 +4,77 @@ body  {
   margin: 0;
 }
 
-.document {
-  padding: 7em 0;
-  background: 50% 50% / cover no-repeat;
-  background-attachment: fixed;
-  height: 80vh;
-}
-
-#section1 {
-  background-image: url("https://i.imgur.com/PkQ9GXT.png");
-  background-size: 70%;
+/* #section1 {
+  width: 100vw;
+  height: 100vw;
+  background-size: 85%;
+  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-position: top;
-  /* padding: 6em 0; */
-  height: 80vh;
+  background-image: url("https://i.imgur.com/A0AUxpt.png")
 }
-
 #section2 {
-    background-image: url("https://i.imgur.com/J7pVvcj.png");
-    background-size: 70%;
-    background-position:top;
-    background-repeat: no-repeat;
-    height: 80vh;
+  width: 100vw;
+  height: 100vw;
+  background-size: 85%;
+  background-position: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://i.imgur.com/f5tJEOt.png")
+  }
 
+#section4{
+ width: 100vw;
 }
 
 #section3 {
-  background-image: url("https://i.imgur.com/2i5lNdZ.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 12em 0;
-  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
 
-}
-
-#section4 {
-  background-image: url("https://i.imgur.com/lIXu5jA.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 7em 0;
-  height: 70vh;
+#section1, #section2, #section4 {
+ width: 100vw;
+ margin: 0 40px 0 80px;
 }
 
 
-/* section 3 pictures */
-
-.section3container {
-  min-height: 650px;
-  /* background: pink; */
-  /* margin: 70px auto 0; */
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
+#section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.section3container .box {
+
+@media(max-width: 1200px) {
+  #section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 1200px) {
+  #section5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 800px) {
+  #section5{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width: 800px) {
+  #section3{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   position: relative;
-  min-width: 360px;
-  height: 300px;
   border: solid 2px #ff66c4;
   border-radius: 10px;
   margin: 10px;
@@ -71,24 +82,29 @@ body  {
   display: inline-block;
 }
 
-.section3container .box .imgBox {
-  position: relative;
-  overflow: hidden;
+.titel {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
 
 }
+.box .imgBox {
+/*   position: relative; */
+  overflow: hidden;
+}
 
-.section3container .box .imgBox img {
+.box .imgBox img {
   max-width: 100%;
   transition: transform 2s;
-  margin-top: 45px;
 }
 
-.section3container .box:hover .imgBox img {
-
+.box:hover .imgBox img {
   transform: scale(1.2);
 }
 
-.section3container .box .description {
+.box .description {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -99,19 +115,19 @@ body  {
   transition: transform .5s;
 }
 
-.section3container .box:hover .description {
+.box:hover .description {
   transform: scaleY(1);
 }
-.section3container .box .description .projects {
+.box .description .projects {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   text-align: center;
   padding: 15px;
-  color: #fff;
+  color: black;
 }
 
-.section3container .box .description .projects h2{
+.box .description .projects h2{
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -119,7 +135,7 @@ body  {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.section3container .box .description .projects h3 {
+.box .description .projects h3 {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -128,7 +144,7 @@ body  {
   font-family: 'Alegreya Sans SC', sans-serif;
   text-decoration: underline;
 }
-.section3container .box .description .projects h3 a {
+.box .description .projects h3 a {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -137,7 +153,7 @@ body  {
   font-family: 'Alegreya Sans SC', sans-serif;
   text-decoration: underline;
 }
-.section3container .box .description .projects p {
+.box .description .projects p {
   margin: 10px 0 0;
   padding: 0;
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -148,24 +164,31 @@ body  {
 .gitHub {
   background-size: 60%;
   background-repeat: no-repeat;
-  background-position: top;
 }
 
-#section4 p {
+#section5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#section5 p {
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 24px;
-
+  display: flex;
+  align-items: center;
 }
 
-#section4 img {
-  width: 8%;
-  height: 8%;
-  margin-left: 100px;
-  padding: 10px;
+.footer{
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+#section5 img {
+  width: 100px;
+  height: 100px;
 }
 
 
-#section4 a {
+#section5 a {
   text-decoration: underline;
   color: #cb6ce6;
 }
