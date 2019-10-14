@@ -169,6 +169,7 @@ body  {
 #section5 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 4px;
 }
 #section5 p {
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -185,6 +186,7 @@ body  {
 #section5 img {
   width: 100px;
   height: 100px;
+
 }
 
 
